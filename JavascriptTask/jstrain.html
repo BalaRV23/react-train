@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <p>1. Scenario: You're developing a website for a clothing store. Depending on the weather, you want to display different messages on the homepage. 
+        Write a JavaScript conditional statement using logical operators to display "Stay warm with our winter collection!" if the temperature is below 10 
+        degrees Celsius, "Enjoy the sunshine with our summer collection!" if the temperature is above 25 degrees Celsius, and "Check out our all-season collection!" 
+        for temperatures in between.</p>
+
+        <input type="text" placeholder="ender">
+
+
+    
+<script>
+    // 1. Declare a variable named `name` and assign your name to it.
+    let name = "Bala"
+    console.log(name);
+
+    // Create a variable `age` and assign your age to it.
+    let age = 34
+    console.log(age)
+
+    // 3.Declare a constant `PI` and assign the value of π (pi) to it.
+    const PI = "π";
+    console.log(PI);
+
+    // 4. Write a comment explaining the purpose of your code.
+     
+    // Ans: Instraction of developer about functionality
+
+    // 5. Combine two variables, `firstName` and `lastName`, and store the result in a variable called `fullName`.
+    let firstName = "Bala"
+    let lastName = "murugan"
+    // let fullName = firstName  + " " + lastName
+
+    let fullName = `${firstName} ${lastName}`;
+    console.log(fullName)
+    
+
+    // 6. Swap the values of two variables, `a` and `b`, without using a third variable.
+
+        let a  =  "value1"
+        let b = "value2"
+        a = b;
+        b = a;        
+        console.log(a, b)
+        
+
+
+        let c = 5
+        let d = 8
+        
+        d= c+d;  //13
+        c = d-c; //8
+        d = d-c; // 5
+
+        console.log(c,d)
+
+
+    // 7. Use the `typeof` operator to determine the type of a variable named `exampleVar`.
+        let exampleVar = 1223
+        console.log(typeof (exampleVar))
+
+        let exampleVars = "1223"
+        console.log(typeof (exampleVars))
+
+    // 8. Create a variable named `isStudent` and assign a boolean value to it.
+       
+       let isStudent = Boolean(10 < 9);
+
+       console.log(isStudent)
+
+    //9. Declare a variable `myArray` and assign an array with three elements to it.
+      
+      let food = ["idly", "dosa", "vada"];
+      console.log(food[1])
+
+   
+    // 10. Use the `console.log` method to print the value of a variable named `output`.
+
+        let output = "10thquestion"
+
+        console.log(output)
+
+    // 1. Perform arithmetic operations (addition, subtraction, multiplication) on two number variables.
+     let a1 = 3;
+     let b1 = 2;
+
+      console.log(a1+b1)
+      console.log(a1-b1)
+
+    //   2. Create a BigInt variable and assign a large integer value to it.
+
+    let BigInt = 123456465487841n;
+    console.log(BigInt)
+
+    // 3. Declare a boolean variable `isRaining` and assign its value based on the weather.
+
+    // 4. Assign `null` to a variable named `nullVariable`.
+
+    let nullVariable = null;
+    
+    console.log(nullVariable)
+
+    // 5. Create a variable `undefinedVar` without assigning any value to it.
+
+    //    let undefinedVar = 
+    // console.log(undefinedVar)
+
+
+    // 6. Concatenate two strings and store the result in a new variable.
+
+    let name1 = "suresh";
+    let name2  = "ramesh";
+
+    let fullNamer = firstName  + " " + lastName
+
+    console.log(fullNamer)
+
+
+    // 7. Create an object representing a person with properties like name, age, and address.
+
+    let persondetails = {
+        name : "bala",
+        age : 34,
+        address : "Coimbatore",
+    }
+
+    console.log(persondetails)
+
+
+    // 8. Define an array with at least five different data types.
+
+        let difarr = ["bala", 45, 1225.5, "null", "false"]
+        console.log(difarr)
+
+
+    // 9. Access the second element of an array and store it in a variable.
+
+    let secndvale = [25, 35, 15, 5];
+
+    let sendgot = secndvale[1];
+    console.log(sendgot);
+
+    // 10. Convert a number to a string and vice versa.
+
+    let convernumber = 464564;
+
+    console.log(String(convernumber));
+
+
+
+
+    //1.Use `prompt` to ask the user for their name and store it in a variable.
+
+    // let uname =   prompt("Please enter your name");
+
+    // console.log(uname)
+
+    // 2. Display an alert with a custom message using `alert`.
+
+    // alert("altert")
+    
+    // 3.Get input from the user using `confirm` and store the result in a variable.
+    // let storevar =   confirm("New vistion of this website");
+
+    // console.log(storevar)
+
+    // 4.Use `prompt` to get a number from the user, convert it to a numeric type, and perform an arithmetic operation.
+
+    // let unumber1 =   prompt("Please enter your number1");
+    // let unumber2 =   prompt("Please enter your number2");
+    // console.log(unumber1+unumber2)
+
+    //5. Convert a string to a number and perform an arithmetic operation.
+    let connumber = "123" ; 
+    console.log(Number(connumber))
+
+    // 6. Convert a number to a string and concatenate it with another string.
+
+    let constring = 123;
+    console.log(String(constring) + "is numbers")
+
+
+    // 7. Convert a boolean to a string and check its type using `typeof`.
+    let convboolean = false;
+    let convstrig  = String(convboolean);
+    console.log(typeof(convstrig))
+
+    //  4. Convert a string to a boolean and evaluate its truthiness.
+
+    let booleatru = "stirngconvert"
+
+    console.log(Boolean(booleatru));
+
+    // 5. Convert a number to a boolean and check its type using `typeof`.
+
+    let booleanum = 1234
+    let boolnval = Boolean(booleatru);
+    console.log(typeof(boolnval))  // boolean
+
+    // 6. Use the `String` constructor to convert a number to a string.
+     let cnvrstr = 12354
+
+     console.log(String(cnvrstr))
+
+    //  7. Convert a boolean to a number and check its value.
+
+    let cnvrbln = true;
+    let cnvrtbln = Number(cnvrbln);
+    console.log(cnvrbln)
+    console.log(parseFloat("123254asdfasf"))
+    console.log("----math function------")
+    console.log(Math.floor(12.64))
+    console.log(Math.ceil(12.64))
+    console.log(Math.round(12.34))
+    console.log(Math.trunc(12.34))
+    console.log(Math.random(12.34))
+    console.log(Math.random(). toString(32))
+    console.log(Math.random() *100)
+    console.log(Math.pow(20,2))  // double value multiple
+    console.log(Math.max(12,15,10))
+    console.log(Math.min(12,15,10))
+    console.log(isNaN("hello"))
+    console.log(isFinite("hello"))
+
+
+    // 1.contidion task
+
+    let climate=8;
+
+    if(climate < 10){
+        console.log("Stay warm with our winter collection!")
+    }
+    else if(climate > 25){
+        console.log("Enjoy the sunshine with our summer collection!")
+    }else if(climate >10 || climate < 25){
+        console.log("Check out our all-season collection!")
+    }
+
+
+    // 2.Scenario: You're building a quiz application where users earn badges based on their scores. Implement a JavaScript conditional statement 
+    // that assigns badges based on the user's score. If the score is above 90, they receive a "Gold Badge", if it's between 70 and 90 (inclusive) 
+    // they get a "Silver Badge", and if it's below 70 they get a "Bronze Badge".
+
+    let score = 65;
+    
+    if(score > 90){
+        console.log("Gold Badge")
+    } else if(score>70 && score<90){
+        console.log("Silver Badge")
+    }else{
+        console.log("Bronze Badge")
+    }
+
+
+    // 3.You're developing a game where players have to navigate through a maze. There are obstacles in the maze that they need to avoid. 
+    // Write a JavaScript function using logical operators to check if there's an obstacle at a given position (x, y) on the maze grid. 
+    // The function should return true if there's an obstacle and false otherwise.
+
+
+
+
+
+    // 4.Scenario: You're creating a registration form for a website. You want to ensure that the password meets certain criteria:
+    // it must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one special character. 
+    // Write a JavaScript function that takes a password as input and returns true if it meets the criteria and false otherwise.
+
+
+
+
+
+    // 5. Scenario: You're building a subscription-based service where users can choose different plans. Each plan has
+    // different features. Write a JavaScript function that takes the user's chosen plan and age as input and calculates 
+    // the subscription fee based on the following conditions:    - If the user is under 18 years old, they get a 10% discount 
+    // on any plan.    - If the user chooses the "Premium" plan and is over 60 years old, they get a 20% discount.    
+    // - If the user chooses the "Basic" plan, they pay $10 per month.    - If the user chooses the "Standard" plan, they pay $20 per month.   
+    //  - If the user chooses the "Premium" plan, they pay $30 per month.
+
+    let ages = "61";
+    let plan = "standard" // Premium  Basic   
+    if(ages<18 && plan == "standard" || plan == "Basic" || plan == "Basic"){
+        console.log("10% discount")
+    }else if( ages>60 && plan == "Premium"){
+        console.log("20% discount")
+    }else if(plan == "Basic"){
+        console.log("pay $10 per month")
+    }else if(plan == "Standard"){
+        console.log("pay $20 per month")
+    }else if(plan == "Premium"){
+        console.log("$30 per month")
+    }
+
+
+        // 6. Imagine you're building a web application where users can input their age to access certain features. 
+        // How would you use conditional statements in JavaScript to check if the user is above a certain age before granting access?
+
+        let useage = "";
+
+        if(useage < 18){
+            console.log("Your Age under 18")
+        } else if(useage >= 18){
+            console.log("Your elible to access")
+        }else{
+            console.log("Enter valid age")
+        }
+
+        // 7. Suppose you're designing a game where players need to collect a certain number of points to advance to the next level.
+        // How would you use logical operators in JavaScript to determine if a player has collected enough points to progress?
+
+        let gamepoint = 70;
+
+        if(gamepoint<10){
+            console.log("Your won 1st level")
+        }else if(gamepoint >10 || gamepoint < 30){
+            console.log("Your won 2nd level")
+        }else if(gamepoint >30 || gamepoint < 50){
+            console.log("Your won 3rd level")
+        }else{
+            console("Your legend")
+        }
+        
+        // 8. Let's say you're developing a form validation feature for a website. How would you utilize conditional statements in 
+        // JavaScript to check if all the required fields are filled out before allowing the form to be submitted?
+
+
+
+
+        // 9. Consider you're working on a program that calculates shipping costs based on the weight of items purchased and the destination. 
+        // How would you use logical operators in JavaScript to handle different shipping rates for different weight ranges and destinations?
+
+        let itemweight = 100;
+        let destination = trainer;
+        
+        if(itemweight<30 || destination == trainer){
+            console.log("Item Pirce is Rs. 50")
+        }
+
+
+
+</script>
+</body>
+</html>
